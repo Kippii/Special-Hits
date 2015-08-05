@@ -1,0 +1,5 @@
+name: Special Hits
+main: me.kippy.special.Core
+version: 1.0
+description: >
+             Have special hits do more damage.

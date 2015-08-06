@@ -35,7 +35,7 @@ public class Core extends JavaPlugin implements Listener {
 				Player p = (Player) e.getEntity();
 				double damager_yaw = damager.getLocation().getYaw();
 				double p_yaw = p.getLocation().getYaw();
-				if(((damager_yaw > 0) && (damager_yaw < 45)) && ((p_yaw < 0) && (p_yaw > -45)) || ((damager_yaw < 0) && (damager_yaw > -45)) && ((p_yaw > 0) && (p_yaw < 45))) {
+				if(((damager_yaw >= 0) && (damager_yaw <= 45)) && ((p_yaw <= 0) && (p_yaw >= -45)) || ((damager_yaw <= 0) && (damager_yaw >= -45)) && ((p_yaw >= 0) && (p_yaw <= 45))) {
 					damager_yaw += 45;
 					p_yaw += 45;
 					if(Math.abs(damager_yaw - p_yaw) <= 45) {
